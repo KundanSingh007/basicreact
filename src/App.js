@@ -1,17 +1,15 @@
 import './App.css';
 import React, { useState } from 'react';
+import User from './User';
+
 
 function App() {
 
-  const [data, setData] = useState("kundan");
-  const [hello, setHello] = useState("run");
+  
   return (
     <div className="App">
-      <h1>{data}</h1>
-      <button onClick={() => setData("singh")}>Update data</button>
-
-      <h2>{hello}</h2>
-      <button onClick={()=>setHello("byeeee")}>hello change</button>
+       <h1>app components</h1>
+       <User data={{name:'kundan singh', age:26}} />
     </div>
   );
 }
