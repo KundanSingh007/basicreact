@@ -1,0 +1,16 @@
+.flex__container {
+  display: flex;
+  border: 2px solid gray;
+  height: 45vh;
+  flex-wrap: wrap;
+}
+
+.flex__item {
+  background-color: red;
+  border: 2px solid;
+  padding: auto;
+  margin: 12px;
+  width: 140px;
+  height: 140px;
+  
+}
