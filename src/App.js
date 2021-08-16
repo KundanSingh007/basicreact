@@ -1,13 +1,26 @@
 import './App.css';
-import Flexbox from './Flexbox';
-import Profile from './Profile';
+import atm from './Components/atm/atm';
+import cente from './Components/centeLogo/cente';
+import fourlogos from './Components/fourLogos/fourlogos';
+import header from './Components/Header/header';
+import people from './Components/people/people';
+import footer from './Components/footer/footer';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Flexbox />
-      <Profile />
+
+      <div className="header">
+        <header />
+      </div>
+      <atm />
+      <fourlogos />
+      <cente />
+      <people />
+      <footer />
+
     </div>
   );
 }
