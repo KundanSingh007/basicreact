@@ -2,7 +2,7 @@ import React from "react";
 import "./atm.css";
 import atms from "./visacard.png";
 
-function atm() {
+function Atm() {
   return (
     <div>
       <img src={atms} alt="" />
@@ -10,4 +10,4 @@ function atm() {
   );
 }
 
-export default atm;
+export default Atm;

@@ -1,25 +1,29 @@
 import './App.css';
-import atm from './Components/atm/atm';
-import cente from './Components/centeLogo/cente';
-import fourlogos from './Components/fourLogos/fourlogos';
-import header from './Components/Header/header';
-import people from './Components/people/people';
-import footer from './Components/footer/footer';
+import Atm from './Components/atm/Atm';
+import Cente from './Components/centeLogo/Cente';
+import Fourlogos from './Components/fourLogos/Fourlogos';
+import People from './Components/people/People';
+import Mainheader from "./Components/Header/Mainheader";
+import Footer from './Components/footer/Footer';
+import Sixlogos from './Components/sixLogos/Sixlogos.jsx';
+import BelowHeader from './Components/belowHeader/BelowHeader';
+
+
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
-      <div className="header">
-        <header />
-      </div>
-      <atm />
-      <fourlogos />
-      <cente />
-      <people />
-      <footer />
+      <Mainheader />
+      <BelowHeader />
+      <Sixlogos />
+      <Atm />
+      <Fourlogos />
+      <Cente />
+      <People />
+      <Footer />
 
     </div>
   );

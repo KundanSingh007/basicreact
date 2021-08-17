@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+}
+
+.item {
+  padding: 12px;
+}
+
+#features {
+  display: list-item;
+}
+
+.para {
+  align-self: center;
+}
+
+.row {
+  display: flex;
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import bigPhone from "./bigphone.png";
+import "./header.css";
 
-function header() {
+function Mainheader() {
   return (
     <div id="split">
       <div className="branding">
@@ -19,11 +19,8 @@ function header() {
           </li>
         </ul>
       </nav>
-      <div className="big__phone">
-        <img src={bigPhone} alt="" />
-      </div>
     </div>
   );
 }
 
-export default header;
+export default Mainheader;

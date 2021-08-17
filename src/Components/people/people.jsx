@@ -2,7 +2,7 @@ import React from "react";
 import "./people.css";
 import peopleImage from "./fourguys.png";
 
-function people() {
+function People() {
   return (
     <div>
       <img src={peopleImage} alt="" />
@@ -10,4 +10,4 @@ function people() {
   );
 }
 
-export default people;
+export default People;
