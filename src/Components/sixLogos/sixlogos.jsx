@@ -5,6 +5,7 @@ import sixLogo from "./sixlogos.png";
 function Sixlogos() {
   return (
     <div>
+      
       <img src={sixLogo} alt="" />
     </div>
   );

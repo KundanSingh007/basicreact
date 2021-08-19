@@ -7,9 +7,9 @@ import phone from "./phone.png";
 
 function Fourlogos() {
   return (
-    <div className="main">
+    <div className="container">
       <h6>Smart business</h6>
-      <h1>Core Business Motives</h1>
+      <h3>Core Business Motives</h3>
       <p>
         Online education is approachable in many ways,but students often neglect
         the fact that it is much more economical.
