@@ -1,9 +1,9 @@
+import React from 'react';
 import './App.css';
 import Atm from './Components/atm/Atm';
 import Cente from './Components/centeLogo/Cente';
 import Fourlogos from './Components/fourLogos/Fourlogos';
 import People from './Components/people/People';
-import Mainheader from "./Components/Header/Mainheader";
 import Footer from './Components/footer/Footer';
 import Sixlogos from './Components/sixLogos/Sixlogos.jsx';
 import BelowHeader from './Components/belowHeader/BelowHeader';
@@ -15,8 +15,8 @@ import BelowHeader from './Components/belowHeader/BelowHeader';
 function App() {
   return (
     <div>
+      {/*<Mainheader />*/}
 
-      <Mainheader />
       <BelowHeader />
       <Sixlogos />
       <Atm />

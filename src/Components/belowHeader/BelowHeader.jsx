@@ -6,6 +6,7 @@ import {
   MDBNavbarLink,
   MDBNavbarToggler,
   MDBContainer,
+  MDBBtn,
   MDBIcon,
 } from "mdb-react-ui-kit";
 function BelowHeader() {
@@ -22,20 +23,39 @@ function BelowHeader() {
           </MDBNavbarToggler>
           <div className="collapse navbar-collapse" id="navbarExample01">
             <MDBNavbarNav right className="mb-2 mb-lg-0">
+              <MDBNavbarItem>
+                <MDBNavbarLink href="#">
+                  <h3>
+                    <b>Cente</b>
+                  </h3>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
               <MDBNavbarItem active>
                 <MDBNavbarLink aria-current="page" href="#">
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
+                <MDBNavbarLink href="#">Account</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
                 <MDBNavbarLink href="#">Features</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
+                <MDBNavbarLink href="#">Developers</MDBNavbarLink>
+              </MDBNavbarItem>
+
+              <MDBNavbarItem>
                 <MDBNavbarLink href="#">Pricing</MDBNavbarLink>
               </MDBNavbarItem>
+
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">About</MDBNavbarLink>
+                <MDBNavbarLink href="#">Support</MDBNavbarLink>
               </MDBNavbarItem>
+
+              <MDBBtn rounded color="success">
+                Success
+              </MDBBtn>
             </MDBNavbarNav>
           </div>
         </MDBContainer>
@@ -44,24 +64,17 @@ function BelowHeader() {
       <div
         className="p-5 text-center bg-image"
         style={{
-          backgroundImage:
-            "url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg')",
+          backgroundImage: "url('./bigphone.png'')",
           height: 400,
         }}
       >
-        <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
-          <div className="d-flex justify-content-center align-items-center h-100">
-            <div className="text-white">
-              <h1 className="mb-3">Heading</h1>
-              <h4 className="mb-3">Subheading</h4>
-              <a
-                className="btn btn-outline-light btn-lg"
-                href="#!"
-                role="button"
-              >
-                Call to action
-              </a>
-            </div>
+        <div className="d-flex justify-content-center align-items-center h-100">
+          <div className="text-white">
+            <h1 className="mb-3">Heading</h1>
+            <h4 className="mb-3">Subheading</h4>
+            <a className="btn btn-outline-light btn-lg" href="#!" role="button">
+              Call to action
+            </a>
           </div>
         </div>
       </div>
