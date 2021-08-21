@@ -1,23 +1,71 @@
 import React from "react";
-import "./BelowHeader.css";
-import bigphone from "./bigphone.png";
-
+import {
+  MDBNavbar,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBNavbarToggler,
+  MDBContainer,
+  MDBIcon,
+} from "mdb-react-ui-kit";
 function BelowHeader() {
   return (
-    <div>
-      <img src={bigphone} alt="" />
-      <div className="bye">
-        <div className="container">
-          <h6>Bye bye bank fees,hello world.</h6>
-          <h1>Now, you're in business</h1>
-          <p>
-            Online education is approachable in many ways,but students often
-            neglect the fact that it is much more economical.
-          </p>
+    <header>
+      <MDBNavbar expand="lg" light bgColor="white">
+        <MDBContainer fluid>
+          <MDBNavbarToggler
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <MDBIcon fas icon="bars" />
+          </MDBNavbarToggler>
+          <div className="collapse navbar-collapse" id="navbarExample01">
+            <MDBNavbarNav right className="mb-2 mb-lg-0">
+              <MDBNavbarItem active>
+                <MDBNavbarLink aria-current="page" href="#">
+                  Home
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="#">Features</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="#">Pricing</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="#">About</MDBNavbarLink>
+              </MDBNavbarItem>
+            </MDBNavbarNav>
+          </div>
+        </MDBContainer>
+      </MDBNavbar>
+
+      <div
+        className="p-5 text-center bg-image"
+        style={{
+          backgroundImage:
+            "url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg')",
+          height: 400,
+        }}
+      >
+        <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+          <div className="d-flex justify-content-center align-items-center h-100">
+            <div className="text-white">
+              <h1 className="mb-3">Heading</h1>
+              <h4 className="mb-3">Subheading</h4>
+              <a
+                className="btn btn-outline-light btn-lg"
+                href="#!"
+                role="button"
+              >
+                Call to action
+              </a>
+            </div>
+          </div>
         </div>
-        <button id="get__started">Get Started</button>
       </div>
-    </div>
+    </header>
   );
 }
 
