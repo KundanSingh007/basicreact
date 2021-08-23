@@ -7,6 +7,7 @@ import People from './Components/people/People';
 import Footer from './Components/footer/Footer';
 import Sixlogos from './Components/sixLogos/Sixlogos.jsx';
 import BelowHeader from './Components/belowHeader/BelowHeader';
+import Mainheader from './Components/Header/Mainheader';
 
 
 
@@ -15,7 +16,7 @@ import BelowHeader from './Components/belowHeader/BelowHeader';
 function App() {
   return (
     <div>
-      {/*<Mainheader />*/}
+      <Mainheader />
 
       <BelowHeader />
       <Sixlogos />
